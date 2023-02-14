@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".Sign_in_and_sign_up_btn">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="120pt"
+        app:srcCompat="@mipmap/sign_in_user"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/image_1"/>
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/sign_in"
+        android:textSize="24sp"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        android:layout_below="@id/btn_sign_in"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

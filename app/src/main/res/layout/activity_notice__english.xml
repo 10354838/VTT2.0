@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".Notice_English">
+
+    <TextView
+        android:id="@+id/label_notice_prio_eng"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:text="@string/priority"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/editPrt_eng"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="60dp"
+        android:typeface="serif"
+        android:background="@drawable/roundedspinner"
+        android:entries="@array/priot_choice"
+        android:prompt="@string/priot_prompt" />
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height=""-->
+
+    <TextView
+        android:id="@+id/label_notice_eng"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/notice"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextNotice_eng"
+        android:layout_width="255dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/roundedspinner"
+        android:autofillHints="Notice"
+        android:inputType="textMultiLine"
+        android:typeface="serif"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        tools:ignore="LabelFor" />
+
+    <ImageButton
+        android:id="@+id/img_btn_eng"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="190dp"
+        android:contentDescription="@string/microphone_icon"
+        android:src="@mipmap/ic_btn_mic"
+        android:background="@drawable/roundedimagebutton"/>
+
+    <TextView
+        android:id="@+id/label_notice_to_whom_eng"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        android:text="@string/to_whom"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spin_to_whom_eng"
+        android:layout_width="200dp"
+        android:typeface="serif"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="320dp"/>
+
+    <TextView
+        android:id="@+id/label_notice_to_from_eng"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="360dp"
+        android:text="@string/from"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_user_login_name_eng"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="360dp"
+        android:textColor="@android:color/black"
+        android:hint="@string/current_user" />
+
+
+    <TextView
+        android:id="@+id/label_user_type_login_name_eng"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="360dp"
+        android:textColor="@android:color/black"
+        android:hint="@string/cur_user_type" />
+
+    <TextView
+        android:id="@+id/label_send_date_eng"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="400dp"
+        android:text="@string/sent_date"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_current_date_eng"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="400dp"
+        android:textColor="@android:color/black"
+        android:hint="@string/current_date" />
+
+    <TextView
+        android:id="@+id/label_send_time_eng"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="440dp"
+        android:text="@string/sent_time"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_current_time_eng"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="440dp"
+        android:textColor="@android:color/black"
+        android:hint="@string/current_time" />
+
+    <Button
+        android:id="@+id/btn_send_eng"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/send"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_exit_eng"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/exit"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lang_english"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/english"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/invisibleUserGID"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/btn_send_eng"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

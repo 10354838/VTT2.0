@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".Sign_up_screen">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="80pt"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/sign_in_user"
+        android:contentDescription="@string/image_user_1" />
+
+    <Spinner
+        android:id="@+id/spin_user_type"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedspinner"/>
+
+    <EditText
+        android:id="@+id/editTextEmpID"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/spin_user_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedspinner"
+        android:autofillHints=""
+        android:hint="@string/employee_id"
+        android:drawableStart="@drawable/ic_emp_id"
+        android:drawablePadding="30dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/editTextEmpID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedspinner"
+        android:hint="@string/user_name"
+        android:autofillHints=""
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_user_txt"
+        android:drawablePadding="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/editTextUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedspinner"
+        android:hint="@string/mobile_number"
+        android:autofillHints=""
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="13"
+        android:drawableStart="@drawable/ic_mob_txt"
+        android:drawablePadding="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextPswd"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedspinner"
+        android:layout_below="@id/editTextMobileNo"
+        android:hint="@string/password"
+        android:autofillHints=""
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:drawableStart="@drawable/ic_pswd_txt"
+        android:drawablePadding="30dp"/>
+
+    <Button
+        android:id="@+id/btn_sign_up2"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/btn_sign_in3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sign_up2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/already_have_account_sign_in"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:autoLink="all"
+        android:linksClickable="true"/>
+
+</RelativeLayout>

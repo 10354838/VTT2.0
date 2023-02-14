@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".Sign_in_screen">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="fill_parent"
+        android:layout_height="80pt"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@mipmap/sign_in_user"
+        android:contentDescription="@string/image_user_2" />
+
+    <Spinner
+        android:id="@+id/spin_user_type"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_group"
+        android:drawablePadding="30dp"
+        android:background="@drawable/roundedspinner"/>
+
+    <Spinner
+        android:id="@+id/spin_user_emp_ID"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/spin_user_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_emp_id"
+        android:drawablePadding="30dp"
+        android:background="@drawable/roundedspinner"/>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/roundedspinner"
+        android:inputType="textPersonName"
+        android:hint="@string/user_name"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/spin_user_emp_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_user_txt"
+        android:drawablePadding="30dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedspinner"
+        android:layout_below="@id/editTextUserName"
+        android:drawableStart="@drawable/ic_pswd_txt"
+        android:drawablePadding="30dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_sign_in2"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/sign_in"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewForgotLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sign_in2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:text="@string/forgot_password"
+        android:typeface="serif"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

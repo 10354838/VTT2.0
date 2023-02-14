@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/emp_type"
+        android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emp_type"
+        android:layout_toEndOf="@id/emp_type"
+        android:text="@string/dash"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <TextView
+        android:id="@+id/emp_id"
+        android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@id/dash"
+        android:layout_alignBaseline="@+id/dash"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/emp_name"
+        android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emp_id"
+        android:layout_marginTop="7dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/emp_mob_num"
+        android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/emp_name"
+        android:layout_alignBottom="@+id/emp_name"
+        android:layout_alignParentEnd="true"
+        android:textSize="14sp" />
+</RelativeLayout>

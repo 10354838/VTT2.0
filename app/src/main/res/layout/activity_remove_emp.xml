@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".RemoveEmp">
+
+    <TextView
+        android:id="@+id/label_remove_emp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/remove_employees"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Spinner
+        android:id="@+id/spin_user_grup_select"
+        android:background="@drawable/roundedspinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="250dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/load"
+        android:textSize="18sp"/>
+
+    <ListView
+        android:id="@+id/listEmp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="220dp"
+        android:typeface="serif"
+        android:background="@drawable/roundedspinner"
+        android:divider="@android:color/background_dark"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/holo_blue_bright"
+        android:footerDividersEnabled="false"/>
+
+    <TextView
+        android:id="@+id/txt_Rmv_Emp_Id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/roundedspinner"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:hint="@string/employee_id_will_appear_here"/>
+
+    <Button
+        android:id="@+id/remove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/remove"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/exit_emp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/exit"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

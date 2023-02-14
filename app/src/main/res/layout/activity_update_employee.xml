@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".UpdateEmployee">
+
+    <TextView
+        android:id="@+id/label_assign"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/update_employees"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spin_user_grup_select"
+        android:background="@drawable/roundedspinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/load_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/load"
+        android:textSize="18sp"/>
+
+    <ListView
+        android:id="@+id/listEmp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/spin_user_grup_select"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="200dp"
+        android:typeface="serif"
+        android:background="@drawable/roundedspinner"
+        android:divider="@android:color/background_dark"
+        android:listSelector="@android:color/holo_blue_bright"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"/>
+
+    <TextView
+        android:id="@+id/txt_Up_Emp_Id"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        android:layout_below="@id/spin_user_grup_select"/>
+
+    <EditText
+        android:id="@+id/txt_Up_Emp_Mob_Num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/roundedspinner"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:typeface="serif"
+        android:autofillHints="Mobile Number"
+        android:hint="@string/update_employee_mobile_number"/>
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="570dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/update"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/exit_emp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="570dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@android:color/background_light"
+        android:text="@string/exit"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

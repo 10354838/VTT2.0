@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vtt20">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vtt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/main_3"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UpdateEmployee" android:label="Update Employees"/>
+        <activity android:name=".Sign_up_screen" android:label="Sign Up"/>
+        <activity android:name=".Sign_in_screen" android:label="Sign In"/>
+        <activity android:name=".Sign_in_and_sign_up_btn" android:label="Sign In &amp; Sign Up"/>
+        <activity android:name=".RemoveEmp" android:label="Remove Employees"/>
+        <activity android:name=".Notice_Tamil" android:label="Tamil Notice"/>
+        <activity android:name=".Notice_Sinhala" android:label="Sinhala Notice"/>
+        <activity android:name=".Notice_English" android:label="English Notice"/>
+        <activity android:name=".Lang_Selection" android:label="Language Selection"/>
+        <activity android:name=".DetailsActivity" android:label="Assigned Employees"/>
+        <activity android:name=".CreateUserGroups" android:label="Create User Groups"/>
+        <activity android:name=".Assign_User_Role" android:label="Assign Employees"/>
+        <activity android:name=".AdminPage" android:label="Administration"/>
+        <activity android:name=".AddNEmp" android:label="Add New Employees" />
+        <activity android:name=".MainActivity" android:label="Voice To Text App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
