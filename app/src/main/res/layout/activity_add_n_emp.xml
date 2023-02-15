@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".AddNEmp">
 
@@ -13,7 +13,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/add_new_employees"
+        android:text="New Employees"
         android:typeface="serif"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -46,10 +46,22 @@
         android:layout_centerHorizontal="true"
         android:hint="@string/employee_nic"
         android:inputType="text"
-        android:background="@drawable/roundedspinner"
+        android:background="@null"
         android:autofillHints="Employee ID"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:drawableStart="@drawable/ic_emp_id"
         android:drawablePadding="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="120dp"
+        android:layout_weight="0.7"
+        android:background="#aaaaaa"
+        android:layout_alignParentEnd="true"/>
+
 
     <EditText
         android:id="@+id/txtEmpName"
@@ -58,24 +70,45 @@
         android:layout_marginTop="140dp"
         android:layout_centerHorizontal="true"
         android:hint="@string/employee_name"
-        android:background="@drawable/roundedspinner"
+        android:background="@null"
         android:inputType="textPersonName"
         android:autofillHints="Employee Name"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:drawableStart="@drawable/ic_user_txt"
         android:drawablePadding="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="180dp"
+        android:layout_weight="0.7"
+        android:background="#aaaaaa"
+        android:layout_alignParentEnd="true"/>
 
     <EditText
         android:id="@+id/txtEmpMobileNo"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="200dp"
-        android:background="@drawable/roundedspinner"
+        android:background="@null"
         android:layout_centerHorizontal="true"
         android:hint="@string/employee_mobile_number"
         android:inputType="text|number"
         android:autofillHints="Employee Mobile Number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:drawableStart="@drawable/ic_mob_txt"
         android:drawablePadding="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="240dp"
+        android:layout_weight="0.7"
+        android:background="#aaaaaa"
+        android:layout_alignParentEnd="true"/>
 
     <Button
         android:id="@+id/btn_add_emp"
@@ -83,33 +116,48 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="260dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/add"
         android:textSize="18sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="5px"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="300dp"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_add_emp_exit"
+        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="210dp"
+        android:layout_marginRight="70dp"
         android:layout_marginTop="260dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/exit"
         android:textSize="18sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="5px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="300dp"
+        android:background="#ffffff"/>
 
     <ListView
         android:id="@+id/listEmp"
+        android:layout_marginLeft="50dp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/btn_add_emp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/roundedspinner"
-        android:divider="@android:color/background_dark"
-        android:dividerHeight="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="#404050"
+        android:divider="#4e4b5d"
+        android:dividerHeight="2dp"
         android:footerDividersEnabled="false"
-        android:listSelector="@android:color/holo_blue_bright"/>
+        android:listSelector="#4e4b5d"/>
 </RelativeLayout>

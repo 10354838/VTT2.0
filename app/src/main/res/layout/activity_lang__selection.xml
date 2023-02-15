@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".Lang_Selection">
 
@@ -16,7 +16,7 @@
         android:typeface="serif"
         android:textAlignment="center"
         android:text="@string/user_signed_in"
-        android:textColor="#0000cc"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"/>
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:typeface="serif"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
         android:hint="@string/current_user_type"/>
@@ -40,7 +40,7 @@
         android:layout_marginStart="200dp"
         android:textAlignment="center"
         android:typeface="serif"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
         android:hint="@string/current_user"/>
@@ -55,7 +55,7 @@
         android:typeface="serif"
         android:text="@string/select_your_language"
         android:layout_below="@id/textView"
-        android:textColor="#0000cc"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         android:textSize="32sp"/>
 
@@ -66,10 +66,17 @@
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textView2"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/සිංහල"
         android:textSize="24sp"/>
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_sinhala"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_tamil"
@@ -78,10 +85,18 @@
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btn_sinhala"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/தமிழ்"
         android:textSize="24sp"/>
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_tamil"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_english"
@@ -90,9 +105,19 @@
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btn_tamil"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/english"
         android:textSize="24sp"/>
+
+    <Button
+        android:layout_width="144dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_english"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
+
+
 
 </RelativeLayout>

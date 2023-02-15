@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".AdminPage">
 
@@ -24,10 +24,18 @@
         android:layout_below="@id/imageView5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/create_user_groups"
         android:textSize="18sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_create_grup_pg"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_add_emp_pg"
@@ -36,10 +44,18 @@
         android:layout_below="@id/btn_create_grup_pg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/add_new_employees"
         android:textSize="18sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_add_emp_pg"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_asign_emp_pg"
@@ -48,10 +64,18 @@
         android:layout_below="@id/btn_add_emp_pg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/assign_employees"
         android:textSize="18sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_asign_emp_pg"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_update_pg"
@@ -60,10 +84,17 @@
         android:layout_below="@id/btn_asign_emp_pg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/update_employee"
         android:textSize="18sp" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_update_pg"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_remove_pg"
@@ -72,10 +103,17 @@
         android:layout_below="@id/btn_update_pg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/remove_employee"
         android:textSize="18sp" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_remove_pg"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_notice_pg"
@@ -84,10 +122,18 @@
         android:layout_below="@id/btn_remove_pg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/input_voice_notice"
         android:textSize="18sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_notice_pg"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_exit"
@@ -96,10 +142,18 @@
         android:layout_below="@id/btn_notice_pg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/exit"
         android:textSize="18sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="5px"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_exit"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
 
     <TextView
         android:id="@+id/txtCurrentUserAdmin"

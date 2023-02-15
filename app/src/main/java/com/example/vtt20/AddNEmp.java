@@ -40,6 +40,10 @@ public class AddNEmp extends AppCompatActivity {
         Button addEmp = findViewById(R.id.btn_add_emp);
         Button addEmpExit = findViewById(R.id.btn_add_emp_exit);
         lv = findViewById(R.id.listEmp);
+        lv.setListAdapter(new ArrayAdapter(this,
+                android.R.layout.simple_list_item_1, listItems));
+
+
 
         EmpInfoList = new ArrayList<>();
 

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".CreateUserGroups">
 
@@ -38,22 +38,37 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:layout_marginStart="30dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginStart="40dp"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/create_group"
         android:textSize="18sp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="5px"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="180dp"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_create_group_exit"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:layout_marginStart="230dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginRight="70dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/exit"
         android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="5px"
+        android:layout_marginRight="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:background="#ffffff"/>
 
     <ListView
         android:id="@+id/listEmp"
@@ -61,10 +76,12 @@
         android:layout_height="fill_parent"
         android:layout_below="@id/btn_create_group"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/roundedspinner"
-        android:divider="@android:color/background_dark"
-        android:dividerHeight="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="#404050"
+        android:divider="#4e4b5d"
+        android:dividerHeight="2dp"
         android:footerDividersEnabled="false"
-        android:listSelector="@android:color/holo_blue_bright" />
+        android:listSelector="#4e4b5d" />
 </RelativeLayout>

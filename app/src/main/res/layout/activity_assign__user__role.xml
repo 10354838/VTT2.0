@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".Assign_User_Role">
 
@@ -34,38 +34,62 @@
 
     <ListView
         android:id="@+id/listEmp"
+        android:layout_marginStart="50dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/spin_user_grup_select"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="130dp"
-        android:background="@drawable/roundedspinner"
-        android:divider="@android:color/background_dark"
-        android:listSelector="@android:color/holo_blue_bright"
-        android:dividerHeight="1dp"
-        android:footerDividersEnabled="false"/>
+        android:background="#404050"
+        android:divider="#4e4b5d"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:listSelector="#4e4b5d"/>
 
     <Button
         android:id="@+id/btn_assign_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="550dp"
-        android:background="@drawable/roundedbutton"
-        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:text="@string/assign"
         android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="5px"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/btn_assign_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="550dp"
-        android:background="@drawable/roundedbutton"
-        android:textColor="@android:color/background_light"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:text="@string/exit"
         android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="5px"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"/>
 
     <TextView
         android:id="@+id/txtUserNameAssign"
