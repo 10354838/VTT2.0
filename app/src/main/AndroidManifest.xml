@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/main_3"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".UpdateEmployee" android:label="Update Employees"/>
         <activity android:name=".Sign_up_screen" android:label="Sign Up"/>
         <activity android:name=".Sign_in_screen" android:label="Sign In"/>

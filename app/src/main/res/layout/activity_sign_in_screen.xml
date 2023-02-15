@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".Sign_in_screen">
 
@@ -13,7 +13,7 @@
         android:layout_width="fill_parent"
         android:layout_height="80pt"
         android:layout_marginTop="30dp"
-        app:srcCompat="@mipmap/sign_in_user"
+        app:srcCompat="@mipmap/ic_user"
         android:contentDescription="@string/image_user_2" />
 
     <Spinner
@@ -72,7 +72,7 @@
         android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextPassword"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:text="@string/sign_in"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
@@ -92,7 +92,7 @@
         android:linksClickable="true"
         android:text="@string/forgot_password"
         android:typeface="serif"
-        android:textColor="#000000"
+        android:textColor="#939393"
         android:textStyle="bold"
         android:textSize="18sp"/>
 
