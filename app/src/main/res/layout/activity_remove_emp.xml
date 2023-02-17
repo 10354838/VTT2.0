@@ -85,7 +85,7 @@
         android:layout_height="5px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-120dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="100dp"
         android:layout_below="@+id/txt_Rmv_Emp_Id"
         android:background="#ffffff"/>
 
@@ -113,7 +113,7 @@
         android:id="@+id/exit_emp_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="80dp"
+        android:layout_marginRight="65dp"
         android:layout_marginBottom="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -128,7 +128,7 @@
         android:layout_below="@+id/exit_emp_btn"
         android:layout_alignParentRight="true"
         android:layout_marginTop="-60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginRight="50dp"
         android:background="#ffffff" />
 
 </RelativeLayout>

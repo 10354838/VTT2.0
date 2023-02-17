@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -47,7 +47,7 @@
         android:layout_height="fill_parent"
         android:layout_below="@id/label_2"
         app:srcCompat="@mipmap/main_1"
-        android:background="@drawable/bg_circle"
+        android:background="@null"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         android:contentDescription="@string/image_1" />
