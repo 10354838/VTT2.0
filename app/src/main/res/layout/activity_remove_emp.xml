@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".RemoveEmp">
 
@@ -34,24 +34,33 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="250dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginStart="260dp"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/load"
         android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="5px"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="250dp"
+        android:layout_below="@+id/btnLoad"
+        android:background="#ffffff"/>
 
     <ListView
         android:id="@+id/listEmp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="170dp"
         android:layout_marginBottom="220dp"
         android:typeface="serif"
-        android:background="@drawable/roundedspinner"
-        android:divider="@android:color/background_dark"
-        android:dividerHeight="1dp"
-        android:listSelector="@android:color/holo_blue_bright"
+        android:background="#404050"
+        android:divider="#4e4b5d"
+        android:dividerHeight="2dp"
+        android:listSelector="#4e4b5d"
         android:footerDividersEnabled="false"/>
 
     <TextView
@@ -59,35 +68,67 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="450dp"
-        android:background="@drawable/roundedspinner"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold"
         android:typeface="serif"
-        android:hint="@string/employee_id_will_appear_here"/>
+        android:hint="@string/employee_id_will_appear_here"
+        android:textColorHint="@android:color/background_light"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-120dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/txt_Rmv_Emp_Id"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/remove_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="520dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/remove"
         android:textSize="18sp"/>
 
     <Button
+        android:layout_width="120dp"
+        android:layout_height="5px"
+        android:layout_marginTop="-60dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/remove_btn"
+        android:background="#ffffff"/>
+
+    <Button
         android:id="@+id/exit_emp_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="520dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/exit"
         android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="5px"
+        android:layout_below="@+id/exit_emp_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="60dp"
+        android:background="#ffffff" />
 
 </RelativeLayout>

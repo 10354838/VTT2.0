@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroud"
     android:orientation="vertical"
     tools:context=".UpdateEmployee">
 
@@ -34,25 +34,35 @@
         android:id="@+id/load_btn"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="250dp"
+        android:layout_marginStart="260dp"
         android:layout_marginTop="80dp"
-        android:background="@drawable/roundedbutton"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/load"
         android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="5px"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="250dp"
+        android:layout_below="@+id/load_btn"
+        android:background="#ffffff"/>
 
     <ListView
         android:id="@+id/listEmp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/spin_user_grup_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="200dp"
         android:typeface="serif"
-        android:background="@drawable/roundedspinner"
-        android:divider="@android:color/background_dark"
-        android:listSelector="@android:color/holo_blue_bright"
-        android:dividerHeight="1dp"
+        android:background="#404050"
+        android:divider="#4e4b5d"
+        android:dividerHeight="2dp"
+        android:listSelector="#4e4b5d"
         android:footerDividersEnabled="false"/>
 
     <TextView
@@ -70,37 +80,68 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/roundedspinner"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold"
         android:inputType="number"
         android:typeface="serif"
         android:autofillHints="Mobile Number"
-        android:hint="@string/update_employee_mobile_number"/>
+        android:hint="@string/update_employee_mobile_number"
+        android:textColorHint="@android:color/background_light"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-120dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/txt_Up_Emp_Mob_Num"
+        android:background="#ffffff"/>
 
     <Button
         android:id="@+id/update_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="570dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/update"
         android:textSize="18sp"/>
 
     <Button
+        android:layout_width="120dp"
+        android:layout_height="5px"
+        android:layout_marginTop="-60dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/update_btn"
+        android:background="#ffffff"/>
+
+    <Button
         android:id="@+id/exit_emp_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="570dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
         android:textColor="@android:color/background_light"
         android:text="@string/exit"
         android:textSize="18sp"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="5px"
+        android:layout_below="@+id/exit_emp_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="60dp"
+        android:background="#ffffff" />
 
 </RelativeLayout>
